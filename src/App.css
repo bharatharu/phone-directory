@@ -33,6 +33,7 @@
     font-size: 1.15rem;
     word-wrap: break-word;
     padding-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .name-heading, .phone-heading {
@@ -40,4 +41,16 @@
     font-weight: 600;
     color: #808080;
     text-transform: uppercase;
+}
+.del-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 90px;
+    text-transform: uppercase;
+    background-color: rgb(221, 132, 132);
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+
 }

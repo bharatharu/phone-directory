@@ -15,7 +15,7 @@ class App extends Component {
         name: "Srishti",
         phone: "9999999999"
       }
-    ]
+    ];
     return (
       <div>
         <Header />
@@ -31,6 +31,9 @@ class App extends Component {
               return <div key={sub.id} className="grid-container">
                 <span className="grid-item">{sub.name}</span>
                 <span className="grid-item">{sub.phone}</span>
+                <span className="del-btnContainer">
+                  <button className="del-btn">Delete</button>
+                </span>
               </div>
             })
           }
