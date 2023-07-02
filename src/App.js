@@ -18,7 +18,7 @@ class App extends Component {
     ];
     return (
       <div>
-        <Header />
+        <Header heading="phone-directory"/>
         <div className="component-body-container">
           <button className="custom-btn add-btn">Add</button>
 
@@ -39,7 +39,9 @@ class App extends Component {
           }
         </div>
       </div>
-      );
+    
+    )
+
   }
 }
 
