@@ -6,5 +6,5 @@ import reportWebVitals from './reportWebVitals';
 import AddSubscriber from './AddSubsrciber';
 import './common/common.css';
 
-ReactDOM.render(<AddSubscriber/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 reportWebVitals();

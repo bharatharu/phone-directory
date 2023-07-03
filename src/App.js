@@ -3,21 +3,30 @@ import Header from './Header.js';
 import './App.css';
 
 
-
+// let subscribers = [
+    //   {
+    //     id: 1,
+    //     name: "Shilpa",
+    //     phone: "8888888888"
+    //   },
+    //   { 
+    //     id: 1,
+    //     name: "Srishti",
+    //     phone: "9999999999"
+    //   }
+    // ];
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      subscribersListToShow: [
+
+      ]
+    }
+  }
+
   render() {
-    let subscribers = [
-      {
-        id: 1,
-        name: "Shilpa",
-        phone: "8888888888"
-      },
-      { 
-        id: 1,
-        name: "Srishti",
-        phone: "9999999999"
-      }
-    ];
     return (
       <div>
         <Header heading="phone-directory"/>
@@ -29,7 +38,7 @@ class App extends Component {
             <span className="grid-item phone-heading">Phone</span>
           </div>
           {
-            subscribers.map(sub=>{
+            this.state.subscribersListToShow.map(sub=>{
               return <div key={sub.id} className="grid-container">
                 <span className="grid-item">{sub.name}</span>
                 <span className="grid-item">{sub.phone}</span>
